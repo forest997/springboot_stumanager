@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class GradeController {
     @RequestMapping("getList")
     public String getList(){
+        System.out.println(1);
         return null;
     }
 }
