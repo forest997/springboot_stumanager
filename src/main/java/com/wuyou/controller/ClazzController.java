@@ -25,6 +25,7 @@ public class ClazzController {
         List<Clazz> clazzList = clazzService.list();
         map.put("clazzList", clazzList);
         System.out.println(2);
+        System.out.println(1);
         return "clazzList";
     }
 
