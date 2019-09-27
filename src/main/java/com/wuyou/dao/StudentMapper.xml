@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wuyou.dao.StudentMapper">
+
+    <select id="getStudentList" resultType="com.wuyou.vo.StudentClassVO">
+        select s.id stuId,s.name stuName,s.age stuAge,c.id classId,c.name className,c.master classMaster from t_student s,t_class c where s.class_id = c.id
+    </select>
+</mapper>
