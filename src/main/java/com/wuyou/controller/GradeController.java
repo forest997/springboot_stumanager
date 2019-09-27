@@ -10,4 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/grade")
 public class GradeController {
+    @RequestMapping("getList")
+    public String getList(){
+        return null;
+    }
 }
