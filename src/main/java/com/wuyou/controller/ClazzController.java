@@ -24,6 +24,7 @@ public class ClazzController {
     public String getClazzList(ModelMap map){
         List<Clazz> clazzList = clazzService.list();
         map.put("clazzList", clazzList);
+        System.out.println();
         return "clazzList";
     }
 
